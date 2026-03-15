@@ -27,6 +27,9 @@ e) Ratio of allowed attempts to range of numbers allowed doesn't match difficult
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
+a) I started with VScode Chat panel and Claude, asking it specific questions mentioning the lines I thought affected the problem and it suggested a change to the line in question. Otherwise, it suggested changes in-line, like when I changed HIGHER to LOWER manually, it suggested changing LOWER to HIGHER.
+b) I used copilot to ask for pytest test... 
+
 ---
 
 ## 3. Debugging and testing your fixes
@@ -35,6 +38,9 @@ e) Ratio of allowed attempts to range of numbers allowed doesn't match difficult
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
+
+I ran the program again and observed if it stayed the same.
+
 
 ---
 
