@@ -6,7 +6,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
-  (for example: "the secret number kept changing" or "the hints were backwards").
+  (for example: "the hints were backwards").
 
 Menus
 a) I noticed the game has 3 different counters for attempts that don't match up: the total attempts allowed says 8 while the Attempts left says 7 and (previous) Attempts says 1, despite no attempts being made.
@@ -46,9 +46,7 @@ I ran the program again and observed if it stayed the same.
 
 ## 4. What did you learn about Streamlit and state?
 
-- In your own words, explain why the secret number kept changing in the original app.
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
-- What change did you make that finally gave the game a stable secret number?
 
 ---
 
