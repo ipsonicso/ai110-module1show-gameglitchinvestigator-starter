@@ -46,19 +46,20 @@ Changing
 3) I used copilot to generate and run pytest tests meeting my requirements.
 
 ### Examples: 
-1)  Correct: I asked Claude to fix the attempts saving between runs/difficulty switches. 
+1)  Correct: I asked Claude to fix the attempts saving between runs/difficulty switches.
+  - Note: no changes fundamentally broke the game, reguardless of how accurate they were to the intended behavior. No crashes, and game still ran no matter what.
 2)  Incorrect: I asked Claude to adapt the program so history would update on click, but even after claiming it was definitely fixed, the history still only updated on second click.
   - **Adaptation:** I reasoned that, since accidentally guessing the same thing twice would be bad anyways, this issue could be circumvented by keeping the second-click output and not penalizing reguessing the same number (so attempts won't update).   
   
 ---
 
 ## 3. Debugging and testing your fixes
-Qs: 
+### Qs: 
 - How did you decide whether a bug was really fixed?
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
-As: 
+### As: 
 
 I ran the program again and observed if it stayed the same.
 [DEMO video: testing my fixes](https://www.loom.com/share/0e20309cbfee496fa6cf12ea0429187c)
@@ -70,7 +71,6 @@ I ran the program again and observed if it stayed the same.
     - entering the same input 2+ times doesn't count towards attempts
     - submitting input after winning doesn't add to score
     - history updates after 2nd click still, but doesn't save to attempts
-    - 
 3) I used AI for the pytest examples in test_game_logic.py, but I used my own understanding and manual tests to improve output
 
 
@@ -84,13 +84,12 @@ I ran the program again and observed if it stayed the same.
 ---
 
 ## 5. Looking ahead: your developer habits
-Qs:
+### Qs:
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
-As:
-
+### As:
 1) Habit to reuse: Using Claude to generate and run testing criteria for pytest
 2) Habit to do differently: Ask AI to explaining the process more
 3) This project showed me that AI could be used for UI, as a way to adapt terminal code to websites.
